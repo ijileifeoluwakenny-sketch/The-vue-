@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Vue | Pan Asian Restaurant & Fine Dining in Wuse, Abuja</title>
+<meta name="description" content="The Vue is a Pan-Asian restaurant and lounge at Novare Mall, Wuse Zone 5, Abuja. Contemporary Asian cuisine, cocktails, private dining and memorable nights out.">
+<meta property="og:type" content="restaurant">
+<meta property="og:title" content="The Vue | Pan Asian Restaurant in Wuse, Abuja">
+<meta property="og:description" content="An elevated taste of Asia. Pan-Asian dining, cocktails and private dining in the heart of Abuja.">
+<meta property="og:locale" content="en_NG">
+<meta name="keywords" content="Pan Asian restaurant Abuja, fine dining Abuja, restaurant in Wuse Abuja, private dining Abuja, Pan Asian food Abuja">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","name":"The Vue","servesCuisine":"Pan-Asian","telephone":"+2348178888812","address":{"@type":"PostalAddress","streetAddress":"Novare Mall, Wuse Zone 5","addressLocality":"Abuja","addressRegion":"Federal Capital Territory","addressCountry":"NG"},"openingHours":"Mo-Su 11:00-22:30","sameAs":["https://www.instagram.com/vueabuja"]}</script>
+<style>
+:root{--bg:#161514;--bg2:#1e1c1a;--ink:#f3ecdf;--mute:#a79f91;--gold:#c9ad7f;--line:rgba(201,173,127,.22);--serif:'Cormorant Garamond',Georgia,serif;--sans:'Jost',system-ui,sans-serif;--pad:clamp(20px,6vw,88px)}
+:root:not([data-theme=dark]){}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px;height:auto}
+body{background:var(--bg);color:var(--ink);font:300 17px/1.7 var(--sans);padding-top:env(safe-area-inset-top,0px);padding-bottom:calc(env(safe-area-inset-bottom,0px) + 64px)}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.05;letter-spacing:.01em}
+h2{font-size:clamp(34px,5.2vw,64px);max-width:16ch}
+section{padding:clamp(72px,11vw,150px) var(--pad)}
+p{max-width:52ch;color:var(--mute)}
+.btn{display:inline-block;padding:15px 30px;border:1px solid var(--gold);font:400 13px var(--sans);letter-spacing:.2em;text-transform:uppercase;background:none;color:var(--ink);cursor:pointer;transition:background .35s,color .35s;min-height:48px}
+.btn:hover{background:var(--gold);color:#161514}
+.btn.solid{background:var(--gold);color:#161514}.btn.solid:hover{background:var(--ink);border-color:var(--ink)}
+header{position:fixed;inset:0 0 auto 0;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:calc(18px + env(safe-area-inset-top,0px)) var(--pad) 18px;transition:background .4s,padding .4s}
+header.s{background:rgba(22,21,20,.82);backdrop-filter:blur(14px);padding-top:calc(10px + env(safe-area-inset-top,0px));padding-bottom:10px;border-bottom:1px solid var(--line)}
+.logo{font:500 24px var(--serif);letter-spacing:.42em}
+nav{display:flex;gap:28px;font-size:13px;letter-spacing:.18em;text-transform:uppercase}
+nav a{color:var(--mute);transition:color .3s}nav a:hover{color:var(--ink)}
+.burger{display:none;background:none;border:0;color:var(--ink);font-size:14px;letter-spacing:.2em;min-height:48px;cursor:pointer}
+@media(max-width:980px){nav{position:fixed;inset:0;background:var(--bg);flex-direction:column;justify-content:center;align-items:center;font-size:20px;gap:30px;transform:translateY(-100%);transition:transform .5s;visibility:hidden}nav.o{transform:none;visibility:visible}.burger{display:block;position:relative;z-index:30}header .btn{display:none}}
+.hero{min-height:100vh;min-height:100svh;display:grid;align-items:end;position:relative;overflow:hidden;background:radial-gradient(60% 50% at 72% 38%,rgba(201,173,127,.22),transparent 70%),linear-gradient(#1b1917,#121110)}
+.arch{position:absolute;right:var(--pad);top:14%;width:min(38vw,440px);aspect-ratio:3/4;border-radius:999px 999px 0 0;border:1px solid var(--line);background:linear-gradient(180deg,rgba(201,173,127,.3),rgba(201,173,127,.03) 60%),repeating-linear-gradient(90deg,transparent 0 22px,rgba(201,173,127,.06) 22px 23px);animation:glow 8s ease-in-out infinite alternate}
+.arch::after{content:"";position:absolute;inset:14px;border-radius:999px 999px 0 0;border:1px solid var(--line)}
+@keyframes glow{to{box-shadow:0 0 120px rgba(201,173,127,.22)}}
+.hero-in{position:relative;padding:0 var(--pad) 90px;max-width:1200px}
+.hero h1{font-size:clamp(52px,9.5vw,138px);max-width:9ch;margin-bottom:24px;animation:up 1.2s cubic-bezier(.2,.7,.2,1) both}
+.hero p{font-size:20px;color:var(--ink);opacity:.85;margin-bottom:36px;animation:up 1.2s .25s both}
+.hero .btns{display:flex;flex-wrap:wrap;gap:14px;animation:up 1.2s .45s both}
+@keyframes up{from{opacity:0;transform:translateY(28px)}}
+.loc{position:absolute;right:var(--pad);bottom:44px;font-size:13px;letter-spacing:.2em;color:var(--gold);text-align:right}
+.loc span{display:block;margin-top:10px;color:var(--mute)}
+.ph{position:relative;overflow:hidden;background:radial-gradient(70% 60% at 30% 30%,var(--a,#4a3a26),transparent),linear-gradient(160deg,var(--b,#2a2420),#141312);min-height:220px}
+.ph::after{content:"Photo placeholder";position:absolute;left:14px;bottom:10px;font-size:11px;letter-spacing:.14em;color:rgba(243,236,223,.35)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,7vw,110px);align-items:center}
+.split .ph{aspect-ratio:4/5}
+@media(max-width:820px){.split{grid-template-columns:1fr}}
+.split h2{margin-bottom:28px}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin-top:56px}
+.card{position:relative;aspect-ratio:3/4;display:flex;flex-direction:column;justify-content:flex-end;padding:26px;overflow:hidden;background:var(--bg2)}
+.card .ph{position:absolute;inset:0;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.card:hover .ph{transform:scale(1.06)}
+.card>*:not(.ph){position:relative}
+.card::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(transparent 35%,rgba(10,9,8,.88))}
+.card h3,.card p{position:relative;z-index:2}
+.card h3{font-size:28px;margin-bottom:8px}.card p{font-size:15px;color:#cfc7b8}
+@media(max-width:900px){.cards{grid-template-columns:1fr 1fr}}@media(max-width:520px){.cards{grid-template-columns:1fr}.card{aspect-ratio:4/3}}
+#menu{background:var(--bg2)}
+.tabs{display:flex;gap:6px;overflow-x:auto;scroll-snap-type:x mandatory;margin:44px 0 36px;border-bottom:1px solid var(--line);scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{scroll-snap-align:start;flex:none;background:none;border:0;border-bottom:2px solid transparent;color:var(--mute);font:400 13px var(--sans);letter-spacing:.18em;padding:16px 16px;cursor:pointer;min-height:48px;text-transform:uppercase}
+.tab[aria-selected=true]{color:var(--ink);border-color:var(--gold)}
+.dishes{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:26px}
+.dish .ph{aspect-ratio:4/3;transition:transform .8s}
+.dish{overflow:hidden}.dish:hover .ph{transform:scale(1.04)}
+.dish .ph{min-height:0}
+.dish h3{font-size:26px;margin:14px 0 4px;display:flex;justify-content:space-between;gap:12px;align-items:baseline}
+.dish small{font:400 12px var(--sans);letter-spacing:.12em;color:var(--gold);white-space:nowrap}
+.dish p{font-size:15px}
+.veg{display:inline-block;width:9px;height:9px;border:1px solid #7fb27f;border-radius:50%;background:#7fb27f;margin-right:8px}
+.note{margin-top:30px;font-size:14px}
+.bar{background:radial-gradient(50% 60% at 20% 50%,rgba(201,173,127,.13),transparent),#0f0e0d;text-align:left}
+.bar h3{font-size:clamp(28px,4vw,46px);font-style:italic;color:var(--gold);margin:22px 0 10px}
+.rev{display:grid;grid-template-columns:auto 1fr;gap:clamp(30px,6vw,90px);align-items:center}
+.score{font:500 clamp(70px,10vw,120px)/1 var(--serif);color:var(--gold)}
+.score small{display:block;font:300 15px var(--sans);letter-spacing:.14em;color:var(--mute)}
+@media(max-width:760px){.rev{grid-template-columns:1fr}}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0}
+.chip{border:1px solid var(--line);padding:9px 18px;font-size:14px;letter-spacing:.08em;color:var(--mute);background:none;cursor:pointer;font-family:var(--sans);min-height:44px}
+.chip[aria-pressed=true]{border-color:var(--gold);color:var(--ink)}
+.grid{columns:3 220px;column-gap:10px}
+.grid button{display:block;width:100%;margin-bottom:10px;border:0;padding:0;cursor:zoom-in;background:none}
+.grid .ph{transition:transform .8s}.grid button:hover .ph{transform:scale(1.03)}
+.lb{position:fixed;inset:0;z-index:50;background:rgba(10,9,8,.95);display:none;place-items:center;padding:24px}
+.lb.o{display:grid}.lb .ph{width:min(92vw,900px);aspect-ratio:4/3}
+.lb button{position:absolute;top:calc(20px + env(safe-area-inset-top,0px));right:24px;color:var(--ink);background:none;border:1px solid var(--line);padding:10px 18px;cursor:pointer;font:400 13px var(--sans);letter-spacing:.16em}
+form{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:44px;max-width:820px}
+form .f{display:flex;flex-direction:column;gap:6px}form .w{grid-column:1/-1}
+label{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--mute)}
+input,select,textarea{background:rgba(255,255,255,.04);border:1px solid var(--line);color:var(--ink);padding:14px;font:300 16px var(--sans);min-height:50px;width:100%;color-scheme:dark}
+input:focus,select:focus,textarea:focus{border-color:var(--gold);outline:none}
+@media(max-width:600px){form{grid-template-columns:1fr}}
+.ok{display:none;border:1px solid var(--gold);padding:36px;margin-top:44px;max-width:820px}
+.ok h3{font-size:34px;margin-bottom:8px}
+.info{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:36px;margin:48px 0}
+.info h3{font-size:22px;color:var(--gold);margin-bottom:8px}.info a{display:block}
+.mapbox{height:280px;border:1px solid var(--line);display:grid;place-items:center;text-align:center;background:repeating-linear-gradient(45deg,#1a1817 0 18px,#1e1c1a 18px 36px);padding:20px}
+footer{padding:64px var(--pad) 40px;border-top:1px solid var(--line);display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;font-size:15px}
+footer h4{font:400 12px var(--sans);letter-spacing:.2em;color:var(--gold);margin-bottom:12px;text-transform:uppercase}
+footer a{display:block;color:var(--mute)}footer a:hover{color:var(--ink)}
+.copy{grid-column:1/-1;font-size:13px;color:var(--mute)}
+@media(max-width:700px){footer{grid-template-columns:1fr}}
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:15;display:none;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(22,21,20,.92);backdrop-filter:blur(12px);border-top:1px solid var(--line);gap:10px}
+.sticky a{flex:1;text-align:center;padding:14px 8px;font-size:13px;letter-spacing:.16em;text-transform:uppercase;border:1px solid var(--gold)}
+.sticky a:first-child{background:var(--gold);color:#161514}
+@media(max-width:820px){.sticky{display:flex}.arch{opacity:.5;width:64vw}.loc{display:none}}
+.rv{opacity:0;transform:translateY(22px);transition:opacity 1s,transform 1s}.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<header id="hd">
+  <a href="#top" class="logo" aria-label="The Vue, home">THE VUE</a>
+  <nav id="nav" aria-label="Primary">
+    <a href="#menu">Menu</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#private">Private Dining</a><a href="#events">Events</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
+  </nav>
+  <a class="btn" href="#reserve">Reserve a table</a>
+  <button class="burger" id="bg" aria-expanded="false" aria-controls="nav">MENU</button>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div class="arch" role="img" aria-label="Illustration of an arched window glowing with evening light"></div>
+  <div class="hero-in">
+    <h1>An elevated taste of Asia.</h1>
+    <p>Pan-Asian dining, crafted for unforgettable moments in the heart of Abuja.</p>
+    <div class="btns"><a class="btn solid" href="#reserve">Reserve a table</a><a class="btn" href="#menu">Explore the menu</a></div>
+  </div>
+  <div class="loc">Wuse • Abuja • Nigeria<span>DISCOVER THE VUE ↓</span></div>
+</div>
+
+<section id="about" class="split">
+  <div class="rv"><h2>Where flavour meets the view.</h2><br><p>Welcome to The Vue, a contemporary Pan-Asian dining destination created for people who appreciate exceptional food, beautiful spaces and memorable evenings. From expertly prepared dishes to signature drinks and attentive service, every detail is designed to elevate your experience.</p></div>
+  <div class="ph rv" role="img" aria-label="The Vue restaurant interior at night" style="--a:#5a4426"></div>
+</section>
+
+<section id="experience">
+  <h2 class="rv">The Dining Experience</h2>
+  <div class="cards" id="cards"></div>
+</section>
+
+<section id="menu">
+  <h2 class="rv">A table worth gathering around.</h2>
+  <div class="tabs" role="tablist" aria-label="Menu categories" id="tabs"></div>
+  <div class="dishes" id="dishes" role="tabpanel" aria-live="polite"></div>
+  <p class="note">Featured dishes shown. Prices are confirmed with your server and on the printed menu.</p>
+  <br><a class="btn" href="#reserve">Reserve to dine</a>
+</section>
+
+<section id="private" class="split" style="background:var(--bg2)">
+  <div class="ph rv" role="img" aria-label="Private dining room set for an evening" style="--a:#3d3020;--b:#251f1b"></div>
+  <div class="rv"><h2>Make it private. Make it yours.</h2><br><p>A private dining room for birthdays, anniversaries, corporate dinners, proposals, intimate celebrations and special occasions.</p><br><a class="btn solid" href="#reserve" data-occ="Private dining">Enquire about private dining</a></div>
+</section>
+
+<section id="events">
+  <h2 class="rv">Celebrate at The Vue.</h2>
+  <div class="cards" id="events-grid" style="grid-template-columns:repeat(3,1fr)"></div>
+  <br><br><a class="btn" href="#reserve" data-occ="Event enquiry">Plan your event</a>
+</section>
+
+<section class="bar" id="drinks">
+  <h2 class="rv">Raise a glass.</h2>
+  <h3>Devil's Margarita</h3>
+  <p>Your night just found its signature sip.</p><br>
+  <div class="ph" role="img" aria-label="Devil's Margarita cocktail" style="--a:#6b2a1e;min-height:280px;max-width:520px"></div><br>
+  <a class="btn" href="#menu" data-tab="Drinks">Explore drinks</a>
+</section>
+
+<section id="reviews" style="background:var(--bg2)">
+  <div class="rev">
+    <div class="score">4.4 ★<small>Google rating<br>1,500+ reviews</small></div>
+    <div><h2>Loved by our guests.</h2><br><p>Guest reviews will appear here once pulled from The Vue's Google Business profile.</p></div>
+  </div>
+</section>
+
+<section id="gallery">
+  <h2 class="rv">Gallery</h2>
+  <div class="chips" id="chips" role="group" aria-label="Gallery filter"></div>
+  <div class="grid" id="grid"></div>
+  <br><a class="btn" href="https://www.instagram.com/vueabuja" target="_blank" rel="noopener">Follow @vueabuja</a>
+</section>
+
+<section id="reserve" style="background:radial-gradient(50% 50% at 80% 20%,rgba(201,173,127,.12),transparent),var(--bg2)">
+  <h2 class="rv">Your table awaits.</h2><br>
+  <p>Whether it's an intimate dinner, a celebration or an evening with friends, let The Vue set the scene. Private dining available.</p>
+  <form id="rf">
+    <div class="f"><label for="n">Name</label><input id="n" required autocomplete="name"></div>
+    <div class="f"><label for="p">Phone</label><input id="p" type="tel" required autocomplete="tel"></div>
+    <div class="f"><label for="e">Email</label><input id="e" type="email" required autocomplete="email"></div>
+    <div class="f"><label for="g">Number of guests</label><select id="g" required><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9+ (private dining)</option></select></div>
+    <div class="f"><label for="d">Date</label><input id="d" type="date" required></div>
+    <div class="f"><label for="t">Time</label><input id="t" type="time" min="11:00" max="22:00" value="19:00" required></div>
+    <div class="f w"><label for="o">Occasion</label><select id="o"><option>Dinner</option><option>Birthday</option><option>Anniversary</option><option>Business dinner</option><option>Proposal</option><option>Private dining</option><option>Event enquiry</option></select></div>
+    <div class="f w"><label for="s">Special requests</label><textarea id="s" rows="3"></textarea></div>
+    <div class="w"><button class="btn solid" id="sb" type="submit">Reserve my table</button></div>
+  </form>
+  <div class="ok" id="ok" role="status" tabindex="-1"><h3>Request received.</h3><p id="okt"></p></div>
+</section>
+
+<section id="contact">
+  <h2 class="rv">Find us at Novare Mall.</h2>
+  <div class="info">
+    <div><h3>The Vue</h3><p>3F75+W86, Novare Mall<br>Wuse, Abuja<br>Federal Capital Territory, Nigeria</p></div>
+    <div><h3>Phone</h3><a href="tel:+2348178888812">0817 888 8812</a></div>
+    <div><h3>Hours</h3><p>Daily<br>11:00 AM – 10:30 PM</p></div>
+  </div>
+  <div class="mapbox"><div><p style="margin:0 auto 18px">Open the live map for Novare Mall, Wuse Zone 5.</p><a class="btn solid" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Novare+Mall+Wuse+Zone+5+Abuja">Get directions</a></div></div>
+</section>
+</main>
+
+<footer>
+  <div><div class="logo" style="margin-bottom:10px">THE VUE</div><p>Pan-Asian dining, elevated.</p></div>
+  <div><h4>Explore</h4><a href="#menu">Menu</a><a href="#about">About</a><a href="#private">Private Dining</a><a href="#events">Events</a><a href="#gallery">Gallery</a><a href="#reserve">Reservations</a><a href="#contact">Contact</a></div>
+  <div><h4>Visit</h4><a href="tel:+2348178888812">0817 888 8812</a><a href="#contact">Novare Mall, Wuse, Abuja</a><a href="https://www.instagram.com/vueabuja" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></div>
+  <div class="copy">© 2026 The Vue. All Rights Reserved.</div>
+</footer>
+
+<div class="sticky"><a href="#reserve">Reserve</a><a href="tel:+2348178888812">Call</a></div>
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Image viewer"><div class="ph" id="lbi"></div><button id="lbx">CLOSE</button></div>
+
+<script>
+const $=s=>document.querySelector(s);
+const hues=['#5a4426','#6b2a1e','#3d4a34','#3a3350','#5a3a2a','#2f4a4a'];
+const ph=(i,alt)=>`<div class="ph" role="img" aria-label="${alt}" style="--a:${hues[i%6]}"></div>`;
+// header
+addEventListener('scroll',()=>$('#hd').classList.toggle('s',scrollY>40),{passive:true});
+const nav=$('#nav'),bg=$('#bg');
+function tog(o){nav.classList.toggle('o',o);bg.setAttribute('aria-expanded',o);bg.textContent=o?'CLOSE':'MENU'}
+bg.onclick=()=>tog(!nav.classList.contains('o'));nav.onclick=e=>{if(e.target.tagName=='A')tog(false)};
+// cards
+const xp=[['Pan-Asian cuisine','Discover a vibrant menu inspired by the flavours, techniques and traditions of Asia.'],['Signature drinks','From refreshing mocktails to crafted cocktails, discover a drink for every mood.'],['Private dining','An intimate setting for celebrations, business dinners and unforgettable occasions.'],['Night out','Good food, great company and an atmosphere designed for evenings that linger.']];
+$('#cards').innerHTML=xp.map((c,i)=>`<article class="card">${ph(i,c[0])}<h3>${c[0]}</h3><p>${c[1]}</p></article>`).join('');
+const ev=['Birthday dinners','Corporate events','Private celebrations','Date nights','Group dining','Special occasions'];
+$('#events-grid').innerHTML=ev.map((c,i)=>`<article class="card" style="aspect-ratio:4/3">${ph(i+2,c)}<h3>${c}</h3></article>`).join('');
+// menu (dishes from the brief; prices intentionally not invented)
+const M={
+'Starters':[['Tempura Shrimp Rolls','Crisp shrimp tempura in a fine roll.',0]],
+'Soups':[['Sweet Corn Soup','A gentle, silky classic.',1],['Chyoza Soup','Warming dumpling soup.',0]],
+'Sushi & Maki':[['Tempura Shrimp Rolls','Crisp shrimp tempura in a fine roll.',0],['Avocado Maki Rolls','Clean, creamy avocado maki.',1]],
+'Indian':[['Nizami Lamb Handi','Slow-cooked lamb in a rich, spiced gravy.',0],['Lamb Biryani','Fragrant layered rice with tender lamb.',0],['Butter Chicken','Tender chicken in a velvety tomato-butter sauce.',0]],
+'Thai':[['Thai Green Curry (Chicken)','Aromatic green curry with chicken.',0]],
+'Chinese':[['Schezwan Hakka Noodles (Chicken)','Wok-tossed noodles with a Schezwan kick.',0],['Chyoza Soup','Warming dumpling soup.',0]],
+'Rice & Noodles':[['Steamed Basmati Rice','Long-grain basmati, steamed simply.',1],['Schezwan Fried Rice','Wok-fired rice with Schezwan spice.',0],['Schezwan Hakka Noodles (Chicken)','Wok-tossed noodles with chicken.',0]],
+'Main Courses':[['Thai Green Curry (Chicken)','Aromatic green curry with chicken.',0],['Nizami Lamb Handi','Slow-cooked lamb in a rich gravy.',0],['Butter Chicken','Tender chicken in a velvety sauce.',0]],
+'Desserts':[],
+'Drinks':[["Devil's Margarita",'Our signature sip. Cocktails and mocktails also available.',0]]};
+const cats=Object.keys(M);let cur=cats[0];
+function draw(){
+ $('#tabs').innerHTML=cats.map(c=>`<button class="tab" role="tab" aria-selected="${c==cur}" data-c="${c}">${c}</button>`).join('');
+ const L=M[cur];
+ $('#dishes').innerHTML=L.length?L.map((d,i)=>`<article class="dish">${ph(i+cats.indexOf(cur),d[0])}<h3><span>${d[2]?'<i class="veg" title="Vegetarian"></i>':''}${d[0]}</h3><p>${d[1]}</p><small>Price on menu</small></article>`.replace('</span>','')).join(''):'<p>Desserts are being added. Ask your server for today\'s selection.</p>';
+}
+$('#tabs').onclick=e=>{const c=e.target.dataset.c;if(c){cur=c;draw()}};draw();
+document.querySelectorAll('[data-tab]').forEach(a=>a.addEventListener('click',()=>{cur=a.dataset.tab;draw()}));
+// gallery
+const gc=['Food','Interiors','Drinks','Events','People'];let gf='All';
+const items=Array.from({length:10},(_,i)=>({c:gc[i%5],h:[260,340,300,380][i%4]}));
+function gdraw(){
+ $('#chips').innerHTML=['All',...gc].map(c=>`<button class="chip" aria-pressed="${c==gf}" data-c="${c}">${c}</button>`).join('');
+ $('#grid').innerHTML=items.filter(x=>gf=='All'||x.c==gf).map((x,i)=>`<button data-i="${i}" data-c="${x.c}" aria-label="View ${x.c} image"><div class="ph" style="--a:${hues[i%6]};height:${x.h}px"></div></button>`).join('');
+}
+$('#chips').onclick=e=>{if(e.target.dataset.c){gf=e.target.dataset.c;gdraw()}};
+$('#grid').onclick=e=>{const b=e.target.closest('button');if(b){$('#lbi').style.setProperty('--a',b.querySelector('.ph').style.getPropertyValue('--a'));$('#lb').classList.add('o');$('#lbx').focus()}};
+$('#lbx').onclick=()=>$('#lb').classList.remove('o');
+addEventListener('keydown',e=>{if(e.key=='Escape')$('#lb').classList.remove('o')});gdraw();
+// occasion CTAs
+document.querySelectorAll('[data-occ]').forEach(a=>a.addEventListener('click',()=>{$('#o').value=a.dataset.occ}));
+// reservation
+$('#d').min=new Date().toISOString().slice(0,10);
+$('#rf').onsubmit=e=>{e.preventDefault();const b=$('#sb');b.disabled=true;b.textContent='Sending…';
+ setTimeout(()=>{$('#rf').style.display='none';const k=$('#ok');k.style.display='block';
+ $('#okt').textContent=`Thank you, ${$('#n').value}. Your request for ${$('#g').value} on ${$('#d').value} at ${$('#t').value} has been received. The team will confirm by phone or email.`;k.focus()},1100)};
+// reveal
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.15});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
